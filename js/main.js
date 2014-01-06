@@ -16,17 +16,10 @@ $.fn.spasticNav = function(options) {
 		 		left : currentPageItem.position().left,
 
 		 	}).appendTo(this); 	
-		 	// if((currentPageItem.position().left)==($('#activeLinkBG').position().left))
-
-		 	// {
-		 	// currentPageItem.find('a').css('color','red');}
 		 	blob = $('#activeLinkBG', nav);
 	$('li', nav).hover(function() {	
 		$('#nav li a').css('color','#000');
 		$(this).find('a').css('color','#fff');
-
-		// if($(this).position().left !==$('#activeLinkBG').position().left){$(this).find('a').css('color','#fff')}
-		// 	else{$(this).find('a').css('color','#000')}
 // mouse over
 
 				clearTimeout(reset);
@@ -41,6 +34,7 @@ $.fn.spasticNav = function(options) {
 						queue : false
 					}
 				);
+				//When Resiting to the currentpage item which takes .activeLink class
 			}, function() {
 
 				 reset = setTimeout(function() {
@@ -58,51 +52,3 @@ $.fn.spasticNav = function(options) {
 	};
 })(jQuery);
 $('#nav').spasticNav();
-
-
-
-
-
-// $("#nav li").each(function(){
-//  if($(this).position().left ==$('#activeLinkBG').position().left){$(this).css('background','red')};
-// 	$(this).hover(function(){$(this).find('a').css('color','#fff')});
-// 	$(this).mouseout(function(){$(this).find('a').css('color','#000')});
-// });
-
-
-
-
-// var listItems = $("#nav li");
-// var ActiveBG = $('#activeLinkBG').position().left;
-
-
-
-// //$('#nav li').hover(function(){
-//  listItems.each(function(li) {
-//  	switch($(this).position().left)
-//  	{
-//  case ActiveBG:
-//  $(this).find('a').css('color','#fff !important');
-//  }
-
-// // 	if($(this).position().left==$('#activeLinkBG').position().left)
-// // 	{
-// // alert('d');
-// //  };
-//  //    if(($(this).position().left)==($('#activeLinkBG').position().left))
-// 	// {$(this).find('a').css('color','#fff')}
-//  });
-// });
-
-
-
-// $.when( $('#nav li').hover() ).then(function( data, textStatus, jqXHR ) {
-// alert( jqXHR.status ); // Alerts 200
-// });
-
-// var ul = $("#nav");
-// var items = ul.getElementsByTagName("li");
-// for (var i = 0; i < items.length; ++i) {
-// 	//if((i.position().left)==($('activeLinkBG').position().left)){alert(i)}
-//   console.log(i)// do something with items[i], which is a <li> element
-// }
