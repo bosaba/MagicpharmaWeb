@@ -1,22 +1,30 @@
+*,a:foucs{
+   outline: 0;
+}
+ul, li {margin: 0;padding: 0;}
+header{height:110px; line-height:110px;}
+.mpLogo{background:url('../images/magicpharmaLogo.png') no-repeat top left; width:193px; height:49px; display:block;margin-top:25px;}
+.mpLogo:hover{background-position:0 -49px;}
 
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+#activeLinkBG{background:#006bac;box-shadow: 0 0 10px #05598C inset;position:absolute;z-index:1;
+	top:0;-webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright:
+	5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;}
 
 
+#nav{position: relative;float:right;}
+#nav li{float: left; text-align:center;list-style: none; margin:0 10px;}
+#nav li a{padding:0 10px;color:#343434;font-weight:600;z-index:2;position:relative;cursor:pointer;font-size:12px;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;text-decoration: none;
+transition: all ease-in 200ms;
+    -moz-transition: all ease-in 200ms;
+    -webkit-transition: all ease-in 200ms;
+    -o-transition: all ease-in 200ms;
+    -ms-transition: all ease-in 200ms;
+}
 
 
+.searchbox{float:right; margin-top:49px; margin-left:35px;}
+.searchIcon{background:url('../images/searchIcon.png') no-repeat top;width:13px;height:13px;display:block;}
+.searchIcon:hover{background-position:0 -13px;}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.flexslider{border-radius:0px;border: 1px solid #FFFFFF;box-shadow: none;margin: 0 ;}
